@@ -1,0 +1,24 @@
+= Radiant Blog Extension
+
+Adds add access control functionality to Radiant. Currently maintained by http://github.com/istar
+
+== Patches
+
+If you want to contribute features or fixes please write your specs and code and submit pull requests to these github.com users:
+
+- istar
+
+== Installation
+
+To install Comments, run:
+
+  rake radiant:extensions:comments:migrate
+
+
+== More Help
+
+This rdiant-blog-extension add bloger role to Radiant
+If your website have blog function, and the blog writed by different people, this extension can help you well.
+
+
+
