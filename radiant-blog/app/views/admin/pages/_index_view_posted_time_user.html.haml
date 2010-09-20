@@ -1,0 +1,6 @@
+%td.posted_time
+  = "#{page.created_at.strftime("%m/%d/%Y")}"
+- if !current_user.bloger
+  %td.posted_user
+    = "#{User.find_by_id(page.created_by_id).name}"
+     
