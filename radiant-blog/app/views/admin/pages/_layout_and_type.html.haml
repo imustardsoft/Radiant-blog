@@ -1,0 +1,14 @@
+.set
+  %p
+    = form.label :layout_id, t('layout')
+    = fields.select :layout_id, [[t('select.inherit') , '']] + Layout.find(:all).map { |s| [s.name, s.id] }
+  %p
+    = fields.label :class_name, t('page_type')
+    = fields.select :class_name, [[t('select.normal'), '']] + Page.descendants.map { |p| [p.display_name, p.name] }.sort_by { |p| p.first }
+  %p
+    = fields.label :status_id, t('status')
+    = fields.select :status_id, status_to_display
+  %p#published_at{:class => (@page.published? ? nil : 'hidden')}
+    = fields.label :published_at, t('published_on')
+    = fields.text_field :published_at, :class=> "date", :value => (@page.published_at? ? I18n.localize(@page.published_at.to_date, :format =>:long) : nil)
+  = render_region :layout_row, :locals => {:f => fields}

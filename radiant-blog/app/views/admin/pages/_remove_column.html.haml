@@ -1,0 +1,4 @@
+%td.remove
+  - if current_user.bloger && page.blog_directory
+  - else
+    = link_to t('remove'), remove_admin_page_url(page)

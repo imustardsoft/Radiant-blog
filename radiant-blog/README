@@ -1,0 +1,27 @@
+= Radiant Blog Extension
+
+Adds access control functionality to Radiant. 
+If you hope some one can only write blog article in your website, this extension is useful for you 
+Currently maintained by http://github.com/istar
+
+== Patches
+
+If you want to contribute features or fixes please write your specs and code and submit pull requests to these github.com users:
+
+- istar
+
+== Installation 
+
+To install Comments, run: 
+
+  rake radiant:extensions:comments:migrate
+
+== More Help
+
+See the included HELP docs here or read them in your Radiant interface with the Help extension installed.
+
+== Contributors
+
+* Jack Xu
+
+If you contribute, go ahead and add your name to the list! 
