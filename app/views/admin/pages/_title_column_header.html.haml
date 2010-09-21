@@ -1,0 +1,4 @@
+%th.page
+  = t('page')
+  - if blog_directory = Page.find_by_blog_directory(1)
+    = link_to t('new_blog'), new_admin_page_child_url(blog_directory.id)
