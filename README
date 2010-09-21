@@ -1,3 +1,28 @@
-= Blog
+= Radiant Blog Extension
 
-Description goes here
+Adds access control functionality to Radiant. Currently maintained by http://github.com/imustardsoft
+
+== Patches
+
+If you want to contribute features or fixes please write your specs and code and submit pull requests to these github.com users:
+
+- imustardsoft
+
+
+== Installation 
+
+To install Blog, run: 
+
+  rake radiant:extensions:blog:migrate
+
+This _WILL_ add 'bloger' and 'blog_directory' column to users and pages table
+
+== More Help
+
+this extension will add a bloger role, the user with bloger role can only write blog(article)
+
+== Setup
+
+1. Add a user with bloger role
+2. In Edit Page have a checkbox, ckeck it means the page is blog directory(Articles Page Generally), remember you should have only one directory
+3. Now the title in index page will display a 'Add New Blog' link, click it you can add blog article
