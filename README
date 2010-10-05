@@ -26,3 +26,5 @@ this extension will add a bloger role, the user with bloger role can only write 
 1. Add a user with bloger role
 2. In Edit Page have a checkbox, ckeck it means the page is blog directory(Articles Page Generally), remember you should have only one directory
 3. Now the title in index page will display a 'Add New Blog' link, click it you can add blog article
+
+If you have questions, please go to http://www.imustardsoft.com and contact us there. 
